@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冠宇資訊有限公司</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex d-md-block flex-nowrap wrapper">
+            <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                <div class="list-group border-0 card text-center text-md-left">
+                    <a href="#page-header" class="list-group-item list-group-item-alt d-inline-block collapsed" data-parent="#sidebar">
+                        <!-- <i class="fas fa-tv"></i> -->
+                        <i class="fas fa-car"></i>
+                        <span class="d-none d-md-inline">汽修幫手</span>
+                    </a>
+
+                    <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-home"></i>
+                        <span class="d-none d-md-inline">關於APP</span>
+                    </a>
+
+                    <a href="#function" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                        <i class="fas fa-hammer"></i>
+                        <span class="d-none d-md-inline">功能介紹</span>
+                    </a>
+
+                    <div class="collapse" id="function" data-parent="#sidebar">
+                        <a href="page/fun1.html" class="list-group-item" data-parent="#menu1">主畫面</a>
+                        <a href="page/fun2.html" class="list-group-item" data-parent="#menu1">查詢車籍</a>
+                        <a href="page/fun3.html" class="list-group-item" data-parent="#menu1">查詢月結</a>
+                        <a href="page/fun4.html" class="list-group-item" data-parent="#menu1">查詢維修</a>
+                    </div>
+
+                    <a href="page/data.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-table"></i>
+                        <span class="d-none d-md-inline">產生資料</span>
+                    </a>
+
+                    <a href="page/question.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="d-none d-md-inline">常見問題</span>
+                    </a>
+
+
+                    <a href="page/contact.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-phone"></i>
+                        <span class="d-none d-md-inline">聯絡我們</span>
+                    </a>
+                </div>
+            </div>
+            <main class="col-md-10 float-left col px-5 pl-md-4 py-4 main">
+                <div id="page-header" class="page-header">
+                    <h1>汽車保養廠 汽修幫手 APP <i class="fas fa-mobile-alt" style="font-size:48px" ></i> </h1>
+                </div>
+
+                <hr>
+                <div class="back-top-top"><a href="http://www.kyc168.com.tw" target="_blank">
+                    <button type="button" class="btn btn-primary">
+                        回到冠宇資訊
+                    </button></a>
+                </div>
+        
+                <div class="row">
+                    <div id="fun1" class="col-12 pb-5">
+                        <div class="list-group" style = "margin-top: 0px;margin-bottom: 30px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start  active">
+                                <div class="d-flex w-100 justify-content-between">
+                                        <h3 class="mb-1">APP 開發理念</h3>
+                                </div>                                
+                                <p class="mb-1">因為客戶資料放在雲端，會有被駭客入侵竊取之風險</p>
+                                <p class="mb-1">並可能會造成法律及賠償的問題</p>
+                                <p class="mb-1">所以將電腦桌機資枓轉入手機</p>
+                                <p class="mb-1">可隨時用手機查詢客戶資料</p>
+                                <p class="mb-1">或許是一個較穩當的做法之一</p>
+                                <p class="mb-1">技術上是將電腦桌機上之保養廠資料,轉成手機資料庫檔案</p>
+                                <p class="mb-1">然後將該檔案複製到手機內部記憶體內</p>
+                                <p class="mb-1">然後就可由手機 APP 來查詢客戶資料</p>
+                                <p class="mb-1">目前僅支援 Android 手機 4.0 以上版本</p>
+                            </a>                
+                        </div>   
+        
+                    </div>
+                </div>  
+
+                <div class="row">
+                    <div id="fun1" class="col-12 pb-5" >
+                        <div class="list-group  alert alert-success" style = "margin-top: 0px;margin-bottom: 30px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                        <h3 class="mb-1">功能介紹</h3>
+                                </div>                                
+                                <p class="mb-1">基本上可查詢車子基本資料和維修資料;或某一零件(或工資)有那些車子維修過</p>
+                                <p class="mb-1">或某一零件(或工資)當初是由那個廠商維修的;或月結客戶所有車子資料</p>
+                                <p class="mb-1">---------------------------------------------------------------------------------------------</p>
+                                 
+                                <p class="mb-1">01:經由使用者輸入密碼,才可使用本 APP 之功能;密碼是在電腦桌機轉檔時所設定</p>
+                                <p class="mb-1">02:可經由輸入牌照號碼 車主名稱 電話號碼 住址 車子廠牌 來查詢車籍資料</p>
+                                <p class="mb-1" style="margin-left:22px"> (a) 可顯示該車籍之相關資料(包含 保險及購買資料)</p>
+                                <p class="mb-1" style="margin-left:22px"> (b) 可查詢該車子所有維修歷史資料
+                                <p class="mb-1" style="margin-left:22px"> (c) 可查詢該部車子某一個東西的維修記錄(經由輸入品名或廠商名稱或備註,查這部車子什麼時候換過這個零件)</p>
+                                <p class="mb-1">03:查詢月結客戶基本資料, 並顯示該月結客戶所有車籍資料</p>
+                                <p class="mb-1">04:查詢 廠商基本資料,並可查詢到維修資料中有該廠商的 部份</p>
+                                <p class="mb-1">05:另外可查詢員工或保險公司之基本資料</p>
+                                <p class="mb-1">06:可查詢某一零件(或工資)有那些車子維修過</p>
+                            </a>                
+                        </div>   
+        
+                    </div>
+                </div>                                
+               
+            </main>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

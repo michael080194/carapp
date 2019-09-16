@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+#sidebar {
+    overflow: hidden;
+    z-index: 3;
+}
+
+#sidebar .list-group {
+    min-width: 200px;
+    /* min-width: 400px; */
+    background-color: #333;
+    min-height: 100vh;
+}
+
+#sidebar i {
+    margin-right: 6px;
+}
+
+#sidebar .list-group-item {
+    border-radius: 0;
+    background-color: #333;
+    color: #ccc;
+    border-left: 0;
+    border-right: 0;
+    border-color: #2c2c2c;
+    white-space: nowrap;
+}
+
+#sidebar .list-group-item-alt {
+    background-color: #ccc;
+    border-bottom: 0.4em solid;
+    color: #333;
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+/* highlight active menu */
+#sidebar .list-group-item:not(.collapsed) {
+    background-color: #222;
+}
+
+/* closed state */
+#sidebar .list-group .list-group-item[aria-expanded='false']::after {
+    content: '\f0d7';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    display: inline;
+    text-align: right;
+    padding-left: 5px;
+}
+
+/* open state */
+#sidebar .list-group .list-group-item[aria-expanded='true'] {
+    background-color: #222;
+}
+
+#sidebar .list-group .list-group-item[aria-expanded='true']::after {
+    content: '\f0da';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    display: inline;
+    text-align: right;
+    padding-left: 5px;
+}
+
+/* level 1*/
+#sidebar .list-group .collapse .list-group-item,
+#sidebar .list-group .collapsing .list-group-item {
+    padding-left: 20px;
+}
+
+/* level 2*/
+#sidebar .list-group .collapse>.collapse .list-group-item,
+#sidebar .list-group .collapse>.collapsing .list-group-item {
+    padding-left: 30px;
+}
+
+/* level 3*/
+#sidebar .list-group .collapse>.collapse>.collapse .list-group-item {
+    padding-left: 40px;
+}
+
+@media (max-width:768px) {
+    #sidebar {
+        min-width: 35px;
+        max-width: 40px;
+        overflow-y: auto;
+        overflow-x: visible;
+        transition: all 0.25s ease;
+        transform: translateX(-45px);
+        position: fixed;
+    }
+
+    #sidebar.show {
+        transform: translateX(0);
+    }
+
+    #sidebar::-webkit-scrollbar {
+        width: 0px;
+    }
+
+    #sidebar,
+    #sidebar .list-group {
+        min-width: 35px;
+        overflow: visible;
+    }
+
+    /* overlay sub levels on small screens */
+    #sidebar .list-group .collapse.show,
+    #sidebar .list-group .collapsing {
+        position: relative;
+        z-index: 1;
+        width: 190px;
+        top: 0;
+    }
+
+    #sidebar .list-group>.list-group-item {
+        text-align: center;
+        padding: .75rem .5rem;
+    }
+
+    /* hide caret icons of top level when collapsed */
+    #sidebar .list-group>.list-group-item[aria-expanded='true']::after,
+    #sidebar .list-group>.list-group-item[aria-expanded='false']::after {
+        display: none;
+    }
+}
+
+.collapse.show {
+    visibility: visible;
+}
+
+.collapsing {
+    visibility: visible;
+    height: 0;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.collapsing.width {
+    -webkit-transition-property: width, visibility;
+    transition-property: width, visibility;
+    width: 0;
+    height: 100%;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+/* ! ! ! */
+body {
+    color: #3b454e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 2rem;
+    font-weight: bolder;
+}
+
+hr {
+    margin-bottom: 2rem;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+article {
+    padding-bottom: 2rem;
+}
+
+code {
+    padding: 0 2px;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+p.notes {
+    padding-left: 1rem;
+    border-left: 3px solid;
+    color: #898f95;
+}
+
+p.notes > img {
+    margin-top: 1rem;
+}
+
+img {
+    display: block;
+    margin-top: .6rem;
+}
+
+dl, ol, ul {
+    margin-bottom: 2rem;
+    padding-inline-start: 1.4rem;
+}
+
+li {
+    margin-bottom: 0.6rem;
+}
+
+ol.innerOl > li {
+    margin-bottom: 0;
+}
+
+.alert {
+    margin-bottom: 2rem;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.sidebar-collapse {
+    /* top: 0;
+    left: 100px;
+    z-index: 1030; */
+    width: 0;
+    height: 0;
+}
+
+.main {
+    overflow: auto;
+    max-height: 100vh;
+}
+
+.back-top-top {
+    position: fixed;
+    right: 2em;
+    bottom: 1em;
+    z-index: 9;
+}
+
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

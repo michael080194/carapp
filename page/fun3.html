@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冠宇資訊有限公司</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex d-md-block flex-nowrap wrapper">
+            <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                <div class="list-group border-0 card text-center text-md-left">
+                    <a href="..\index.html" class="list-group-item list-group-item-alt d-inline-block collapsed" data-parent="#sidebar">
+                        <!-- <i class="fas fa-tv"></i> -->
+                        <i class="fas fa-car"></i>
+                        <span class="d-none d-md-inline">汽修幫手</span>
+                    </a>
+
+                    <a href="..\index.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-home"></i>
+                        <span class="d-none d-md-inline">關於APP</span>
+                    </a>
+
+                    <a href="#function" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                        <i class="fas fa-hammer"></i>
+                        <span class="d-none d-md-inline">功能介紹</span>
+                    </a>
+
+                    <div class="collapse show" id="function" data-parent="#sidebar">
+                        <a href="fun1.html" class="list-group-item" data-parent="#menu1">主畫面</a>
+                        <a href="fun2.html" class="list-group-item" data-parent="#menu1">查詢車籍</a>
+                        <a href="fun3.html" class="list-group-item" data-parent="#menu1">查詢月結</a>
+                        <a href="fun4.html" class="list-group-item" data-parent="#menu1">查詢維修</a>
+                    </div>
+
+                    <a href="data.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-table"></i>
+                        <span class="d-none d-md-inline">產生資料</span>
+                    </a>
+
+                    <a href="question.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="d-none d-md-inline">常見問題</span>
+                    </a>
+
+
+                    <a href="contact.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-phone"></i>
+                        <span class="d-none d-md-inline">聯絡我們</span>
+                    </a>
+                </div>
+            </div>
+            <main class="col-md-10 float-left col px-5 pl-md-4 py-4 main">
+                <div id="page-header" class="page-header">
+                    <h1>汽車保養廠 維修幫手 APP <i class="fas fa-mobile-alt" style="font-size:48px" ></i> </h1>
+                </div>
+
+                <hr>
+                <div class="back-top-top"><a href="http://www.kyc168.com.tw" target="_blank">
+                    <button type="button" class="btn btn-primary">
+                        回到冠宇資訊
+                    </button></a>
+                </div>
+
+                <div class="row">
+                    <div id="fun1" class="col-12 pb-5">
+                        <div class="list-group" style = "margin-top: 0px;margin-bottom: 30px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start  active">
+                                <div class="d-flex w-100 justify-content-between">
+                                        <h3 class="mb-1">查詢月結</h3>
+                                </div>                                
+                                <p class="mb-1">在此功能可依輸入條件 名稱 電話號碼 住址 來查詢 月結客戶 廠商 員工 保險公司資枓</p>
+                                <p class="mb-1">也可查月結客戶基本資料, 並顯示該月結客戶所有車籍資料</p>
+                                <p class="mb-1">查詢 廠商基本資料時,可查詢到維修資料中有該廠商的 部份</p>
+                            </a>                
+                        </div>   
+                        
+                        <div class="list-group" style = "margin-top: 30px;margin-bottom: 15px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">搜尋畫面(SearchSummary)</h5>
+                                </div>
+                                <p class="mb-1">(a)查詢月結客戶資料,在月結客戶列表畫面會有二個按鈕,詳細資枓按鈕會顯示其詳細資料;</p>
+                                <p class="mb-1">(b)月結所有車籍按鈕會顯示該月結客戶所有的車籍資料</p>
+                            </a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/0300_search_summary.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/0301_search_summary_list.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class="list-group" style = "margin-top: 30px;margin-bottom: 15px">
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">月結詳細資料及所有車籍</h5>
+                                    </div>
+                                    <p class="mb-1">車籍資料列表的功能,參考功能介紹的查詢車籍</p>
+                                </a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/0302_show_detail.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/0303_search_car_list.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class="list-group" style = "margin-top: 30px;margin-bottom: 15px">
+                                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                    <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">查詢廠商</h5>
+                                    </div>
+                                    <p class="mb-1">在廠商列表畫面會有二個按鈕</p>
+                                    <p class="mb-1">[詳細資枓] 按鈕會顯示其詳細資料</p>
+                                    <p class="mb-1">[廠商維修] 按鈕會出現一個條件輸入的畫面</p>
+                                    <p class="mb-1">根據所輸入條件,可查詢交修單零件維修是屬於該廠商之資料</p>
+                                </a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/0304_search_suply.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/0305_search_suply.png" alt="" class="img-fluid">
+                            </div>
+                        </div>  
+                        <div style="margin-top: 30px;margin-bottom: 15px"></div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/0306_suply_detail.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/0307_suply_part.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/0308_part_detail.png" alt="" class="img-fluid">
+                            </div>                                    
+                        </div> 
+
+                        <div class="list-group" style = "margin-top: 30px;margin-bottom: 15px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">查詢員工或保險公司資料</h5>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/0309_search_xx.png" alt="" class="img-fluid">
+                            </div>                                
+                        </div>                           
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

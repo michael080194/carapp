@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>冠宇資訊有限公司</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row d-flex d-md-block flex-nowrap wrapper">
+            <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width show" id="sidebar">
+                <div class="list-group border-0 card text-center text-md-left">
+                    <a href="..\index.html" class="list-group-item list-group-item-alt d-inline-block collapsed" data-parent="#sidebar">
+                        <!-- <i class="fas fa-tv"></i> -->
+                        <i class="fas fa-car"></i>
+                        <span class="d-none d-md-inline">汽修幫手</span>
+                    </a>
+
+                    <a href="..\index.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-home"></i>
+                        <span class="d-none d-md-inline">關於APP</span>
+                    </a>
+
+                    <a href="#function" class="list-group-item d-inline-block collapsed" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                        <i class="fas fa-hammer"></i>
+                        <span class="d-none d-md-inline">功能介紹</span>
+                    </a>
+
+                    <div class="collapse show" id="function" data-parent="#sidebar">
+                        <a href="fun1.html" class="list-group-item" data-parent="#menu1">主畫面</a>
+                        <a href="fun2.html" class="list-group-item" data-parent="#menu1">查詢車籍</a>
+                        <a href="fun3.html" class="list-group-item" data-parent="#menu1">查詢月結</a>
+                        <a href="fun4.html" class="list-group-item" data-parent="#menu1">查詢維修</a>
+                    </div>
+
+                    <a href="data.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-table"></i>
+                        <span class="d-none d-md-inline">產生資料</span>
+                    </a>
+
+                    <a href="question.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="d-none d-md-inline">常見問題</span>
+                    </a>
+
+
+                    <a href="contact.html" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                        <i class="fas fa-phone"></i>
+                        <span class="d-none d-md-inline">聯絡我們</span>
+                    </a>
+                </div>
+            </div>
+            <main class="col-md-10 float-left col px-5 pl-md-4 py-4 main">
+
+                <div id="page-header" class="page-header">
+                    <h1>汽車保養廠 維修幫手 APP <i class="fas fa-mobile-alt" style="font-size:48px" ></i> </h1>
+                </div>
+
+                <hr>
+                <div class="back-top-top"><a href="http://www.kyc168.com.tw" target="_blank">
+                    <button type="button" class="btn btn-primary">
+                        回到冠宇資訊
+                    </button></a>
+                </div>
+
+                <div class="row">
+                    <div id="fun1" class="col-12 pb-5">
+                        <div class="list-group" style = "margin-top: 0px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start  active">
+                                <div class="d-flex w-100 justify-content-between">
+                                     <h3 class="mb-1">查詢車籍</h3>
+                                </div>                                
+                                <p class="mb-1">可經由輸入牌照號碼 車主名稱 電話號碼 住址 車子廠牌 來查詢車籍資料</p>
+                                <p class="mb-1">(a) 可顯示該車籍之相關資料(包含 保險及購買資料)</p>
+                                <p class="mb-1">(b) 可查詢該車子所有維修歷史資料</p>
+                                <p class="mb-1">(c) 可查詢該部車子某一個東西的維修記錄(經由輸入品名或廠商名稱或備註,查這部車子什麼時候換過這個零件)</p>
+                            </a>                
+                        </div>       
+
+                        <div class="list-group" style = "margin-top: 50px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">查詢車籍資料(Searchcar)</h5>
+                                </div>
+                                <p class="mb-1">可經由 牌照號碼 車主名稱 電話號碼 住址 車子廠牌 來查詢車籍資料</p>
+                                <p class="mb-1">查詢後顯示查詢結果的車籍的列表(SearchcarList)</p>
+                            </a>                
+                        </div>       
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/020_search_car.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/021_search_car_list.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class="list-group" style = "margin-top: 50px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">車籍明細(SearchcarShowDetail)</h5>
+                                </div>
+                                <p class="mb-1">按車籍明細按鈕可顯示，該車子的詳細資料，總共分四個頁面</p>
+                            </a>                
+                        </div>     
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/022_search_car_list_detail01.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/022_search_car_list_detail02.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/022_search_car_list_detail03.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/022_search_car_list_detail04.png" alt="" class="img-fluid">
+                            </div>                                    
+                        </div>  
+
+                        <div class="list-group" style = "margin-top: 50px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">交修總表(ShowFix)</h5>
+                                </div>
+                                <p class="mb-1">按所有維修資料可顯示該車子的所有交修單資料</p>
+                                <p class="mb-1">在此部份按維修資料按鈕;可顯示該交修單的彙總資料;及該交修單零件及工資詳細資料</p>
+                            </a>                
+                        </div>     
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/0230_show_fix.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/0231_show_fix_detail01.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/0231_show_fix_detail02.png" alt="" class="img-fluid">
+                            </div>                                    
+                        </div>  
+
+                        <div class="list-group" style = "margin-top: 50px">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">部份維修(SearchCarPart)</h5>
+                                </div>
+                                <p class="mb-1">出現搜尋畫面 ；可經由輸入品名或廠商或備註條件;來搜尋該車子的部份維修資料</p>
+                                <p class="mb-1">(此功能最主要功能是在應付客戶,諸如有時會問上次換機油的規格或變速箱的時間等)</p>
+                            </a>                
+                        </div>     
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../image/0240_search_car_part.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-3">
+                                <img src="../image/0241_search_car_part.png" alt="" class="img-fluid">
+                            </div>
+                        </div>                        
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
