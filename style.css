@@ -270,3 +270,8 @@ ol.innerOl > li {
       margin-top: 0;
     }
   }
+
+  .kyc_pd1 {
+    padding-left: 40px;
+    color: blue;
+  }
